@@ -14,7 +14,7 @@
         <tbody>
         <tr ng-repeat="data in vm.tableData track by $index">
             <td data-title="ID">{{$index + 1}}</td>
-            <td data-title="Issue"><md-button ui-sref="showDialogue($event)">{{data.issue}}</md-button></td>
+            <td data-title="Issue"><md-button ng-click="vm.showDialogue($event)">{{data.issue}}</md-button></td>
             <td data-title="Status">{{data.status}}</td>
         </tr>
         </tbody>

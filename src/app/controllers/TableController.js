@@ -9,6 +9,7 @@
 
   function TableController(tableService, $http) {
     var vm = this;
+    vm.showDialogue = showDialogue;
 
     vm.tableData = [];
 	tableFetch($http);
