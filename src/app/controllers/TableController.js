@@ -20,17 +20,27 @@
         vm.tableData = [].concat(tableData);
       });
 	  
-	  function showDialogue(dat) {
+	function showDialogue(dat) {
 		  console.log(dat);
-    $mdDialog.show(
-      $mdDialog.alert()
-        .parent(angular.element(document.querySelector('#popupContainer')))
-        .clickOutsideToClose(true)
-        .title('Caller Details for '+dat.issue)
-        .textContent('Caller Detail Data Goes Here')
-        .ariaLabel('Alert Dialog Demo')
-        .ok('Ok')
-    );
+		$mdDialog.show(
+			{
+			  parent: angular.element(document.body),
+			  clickOutsideToClose: true,
+			  template: 
+				'<md-dialog style="padding: 20px 20px 20px 20px;" md-theme="mytheme">' +
+				'  <md-dialog-content>' +
+				'<h2>Call Details for '+dat.issue+'</h2>' +
+				'<p><b>Promotions Offered:</b>' +dat.status+'</p>'+
+				'<p><b>CDR Type:</b>' +dat.status+'</p>'+
+				'<p><b>IMEI:</b>' +dat.status+'</p>'+
+				'<p><b>IMSI:</b>' +dat.status+'</p>'+
+				'<p><b>Cause Termination Code:</b>' +dat.status+'</p>'+
+				'<p><b>Cause Termination Reason:</b>' +dat.status+'</p>'+
+				'<p><b>Location:</b>' +dat.status+'</p>'+
+				'  </md-dialog-content>' +
+				'</md-dialog>'
+		}
+		);
 }
 
   }
