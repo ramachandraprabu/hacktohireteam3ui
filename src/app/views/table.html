@@ -11,16 +11,20 @@
     </div>
         <thead>
         <tr>
-            <th>Caller ID</th>
-            <th>Name</th>
-            <th>Promotion Offered</th>
+            <th>S.No.</th>
+            <th>CDR Type</th>
+            <th>Calling Number</th>
+            <th>Called Number</th>
+            <th>Location</th>
         </tr>
         </thead>
         <tbody>
         <tr ng-repeat="data in vm.tableData track by $index">
             <td data-title="ID">{{$index + 1}}</td>
-            <td data-title="Issue"><md-button ng-click="vm.showDialogue(data)">{{data.issue}}</md-button></td>
-            <td data-title="Status">{{data.status}}</td>
+            <td data-title="CDR Type"><md-button ng-click="vm.showDialogue(data)">{{data.cdrType}}</md-button></td>
+            <td data-title="Calling Number">{{data.callingNumber}}</td>
+            <td data-title="Called Number">{{data.calledNumber}}</td>
+            <td data-title="Location">{{data.location}}</td>
         </tr>
         </tbody>
     </table>
