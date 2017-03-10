@@ -3,11 +3,11 @@
   angular
     .module('app')
     .controller('TableController', [
-      'tableService', '$http',
+      'tableService', '$http','$mdDialog',
       TableController
     ]);
 
-  function TableController(tableService, $http) {
+  function TableController(tableService, $http, $mdDialog) {
     var vm = this;
     vm.showDialogue = showDialogue;
 
@@ -19,6 +19,20 @@
 		 
         vm.tableData = [].concat(tableData);
       });
+	  
+	  function showDialogue(ev) {
+    $mdDialog.show(
+      $mdDialog.alert()
+        .parent(angular.element(document.querySelector('#popupContainer')))
+        .clickOutsideToClose(true)
+        .title('Caller Detail')
+        .textContent('Caller Detail Data Goes Here')
+        .ariaLabel('Alert Dialog Demo')
+        .ok('Ok')
+        .targetEvent(ev)
+    );
+}
+
   }
 function tableFetch(http) {
 	 console.log("Callin Data Fetch");
@@ -33,10 +47,6 @@ function tableFetch(http) {
   });
 }  
 
-function showDialogue(ev) {
-	
-	console.log("SHOWING DIALOGUE");
-}
 
 
 
