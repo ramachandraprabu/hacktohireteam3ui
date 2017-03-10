@@ -9,7 +9,7 @@
         var vm = this;
 
         // TODO: move data to the service
-        vm.visitorsChartData = [ {key: 'Mobile', y: 5264}, { key: 'Desktop', y: 3872} ];
+        vm.visitorsChartData = [ {key: 'Mobile', y: 5264}, { key: 'Land Line', y: 3872} ];
 
         vm.chartOptions = {
             chart: {

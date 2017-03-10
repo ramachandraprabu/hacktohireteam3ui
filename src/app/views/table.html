@@ -1,8 +1,13 @@
 <!-- TODO: Replace table to table component when https://github.com/angular/material/issues/796 will closed -->
+<div layout-gt-md="row">
+  <panel-widget flex title="Call Type" template="app/views/partials/visitors.html" class="fixed-height-widget"></panel-widget>
+  <panel-widget flex title="Promotion Trend" template="app/views/partials/warnings.html" class="fixed-height-widget"></panel-widget>
+</div>
+
 <div class="table-responsive-vertical md-whiteframe-z1">
     <table id="table" class="table table-hover table-bordered">
 	    <div class="md-toolbar-tools">
-        <span>Call Summary</span>
+        <span>Call Details</span>
     </div>
         <thead>
         <tr>
