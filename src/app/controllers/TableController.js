@@ -20,16 +20,16 @@
         vm.tableData = [].concat(tableData);
       });
 	  
-	  function showDialogue(ev) {
+	  function showDialogue(dat) {
+		  console.log(dat);
     $mdDialog.show(
       $mdDialog.alert()
         .parent(angular.element(document.querySelector('#popupContainer')))
         .clickOutsideToClose(true)
-        .title('Caller Detail')
+        .title('Caller Details for '+dat.issue)
         .textContent('Caller Detail Data Goes Here')
         .ariaLabel('Alert Dialog Demo')
         .ok('Ok')
-        .targetEvent(ev)
     );
 }
 
