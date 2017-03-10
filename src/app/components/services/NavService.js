@@ -9,25 +9,15 @@
 
   function navService($q){
     var menuItems = [
-      {
+	      {
         name: 'Dashboard',
         icon: 'dashboard',
-        sref: '.dashboard'
-      },
-      {
-        name: 'Profile',
-        icon: 'person',
-        sref: '.profile'
-      },
-      {
-        name: 'Table',
-        icon: 'view_module',
         sref: '.table'
       },
       {
-        name: 'Data Table',
+        name: 'Manage Rule',
         icon: 'view_module',
-        sref: '.data-table'
+        sref: '.profile'
       }
     ];
 

@@ -10,51 +10,51 @@
   function tableService($q){
     var tableData = [
       {
-        issue: 'Nested views',
+        issue: 'Hongwei Fang',
         progress: 100,
-        status: 'Done',
+        status: 'Free International Call',
         class: 'md-accent'
       },
       {
-        issue: 'Table component',
+        issue: 'Praboo Ramachandra',
         progress: 40,
-        status: 'Feedback',
+        status: 'Starbucks Voucher',
         class: ''
       },
       {
-        issue: 'Dashboard tiles',
+        issue: 'Dinsuha Dhanushka',
         progress: 100,
-        status: 'Done',
+        status: 'Starbucks Voucher',
         class: 'md-accent'
       },
       {
-        issue: 'Panel widget',
+        issue: 'Koala Kosala',
         progress: 84,
-        status: 'In progress',
+        status: 'Free International Call',
         class: 'orange'
       },
       {
-        issue: 'Form',
+        issue: 'Keith Batallones',
         progress: 100,
-        status: 'Done',
+        status: 'Kopitiam Voucher',
         class: 'md-accent'
       },
       {
-        issue: 'Custom CSS',
+        issue: 'Muthu Kumar',
         progress: 20,
-        status: 'Feedback',
+        status: 'Kopitiam Voucher',
         class: ''
       },
       {
-        issue: 'Add backend',
+        issue: 'Kian Hong',
         progress: 1,
-        status: 'To do',
+        status: 'Free International Calls',
         class: 'md-warn'
       },
       {
-        issue: 'Layout with sidebar',
+        issue: 'Thejo Siva',
         progress: 100,
-        status: 'Done',
+        status: 'Starbucks Voucher',
         class: 'md-accent'
       }
     ];
