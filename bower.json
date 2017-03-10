@@ -1,7 +1,7 @@
 {
   "name": "angular-material-dashboard",
-  "description": "Material Design Angular Admin Dashboard",
-  "homepage": "https://github.com/micrum/angular-material-admin",
+  "description": "hacktohireteam3ui",
+  "homepage": "https://github.com/flatlogic/angular-material-dashboard.git",
   "license": "MIT",
   "version": "1.3.0",
   "dependencies": {

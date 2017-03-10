@@ -48,7 +48,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies',
         }
       });
 
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/table');
 
     $mdThemingProvider
       .theme('default')
