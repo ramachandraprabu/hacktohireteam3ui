@@ -1,6 +1,5 @@
-    <div class="md-toolbar-tools">
-        <span>Manage Rule</span>
-    </div>
+
+	<span>Manage Rule</span> <span style="float:right"><md-button class="md-raised md-primary">Save</md-button></span>
 <md-content class="md-padding">
 
     <form name="userForm">
@@ -11,32 +10,21 @@
                 <input ng-model="vm.user.firstName">
             </md-input-container>
             <md-input-container flex>
-                <label>Last Name</label>
+                <label>Where to Apply ?</label>
                 <input ng-model="vm.user.lastName">
             </md-input-container>
         </div>
-        <md-input-container flex>
-            <label>Address</label>
-            <input ng-model="vm.user.address">
-        </md-input-container>
         <div layout layout-sm="column">
             <md-input-container flex>
-                <label>City</label>
-                <input ng-model="vm.user.city">
-            </md-input-container>
-            <md-input-container flex>
-                <label>State</label>
+                <label>Operator</label>
                 <input ng-model="user.state">
             </md-input-container>
             <md-input-container flex>
-                <label>Postal Code</label>
-                <input ng-model="vm.user.postalCode">
+                <label>Promotion Offered</label>
+                <input ng-model="user.state">
             </md-input-container>
+
         </div>
-        <md-input-container flex>
-            <label>About us</label>
-            <textarea ng-model="vm.user.biography" columns="1"
-                      md-maxlength="150"></textarea>
-        </md-input-container>
+
     </form>
 </md-content>
